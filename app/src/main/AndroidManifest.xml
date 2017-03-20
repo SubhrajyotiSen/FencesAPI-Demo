@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.subhrajyoti.awareness">
 
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,7 +23,12 @@
             android:name="com.google.android.awareness.API_KEY"
             android:value="AIzaSyBEmjlfC87xRUP2FnFynsDdY3QRuI1hIHs" />
 
-        <activity android:name=".HeadphoneFenceActivity" />
+        <activity
+            android:name=".HeadphoneFenceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityFenceActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
